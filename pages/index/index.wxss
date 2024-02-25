@@ -1,0 +1,81 @@
+/**index.wxss**/
+.card-box {
+    background-color: rgb(253,247,249);
+    width: 750rpx;
+    min-height: 100vh;
+}
+.bg-img {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/bg.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+.text-box{
+    position: fixed;
+    margin: 300rpx 130rpx 150rpx;
+    top: 50px;
+}
+
+.border-style{
+    border: 2px dashed black;
+    border-radius: 5px;
+    padding: 30px;
+}
+.to-name{
+    text-align: left;
+    font-weight:bolder
+}
+.main-text{
+    margin: 60rpx 0;
+    font-weight: bolder;
+}
+.from-name{
+    text-align: right;
+    font-weight: bolder;
+}
+.send-btn{
+    position: fixed;
+    bottom: 200rpx;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 70, 70);
+    color: #ffffff;
+}
+.music-icon{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 100rpx;
+    left: 220rpx;
+}
+.music-image{
+    width: 100%;
+    height: 100%;
+}
+.music-hint{
+    position: fixed;
+    top: 200rpx;
+    left: 180rpx;
+}
+.music-hint-text{
+    color: black;
+    font-weight: 200;
+}
+.user-info{
+    position: fixed;
+    top: 200rpx;
+}
+.user-avatar{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 90rpx;
+    left: 50rpx;
+}
+.user-nickname{
+    color: black;
+    font-weight: normal;
+    position: fixed;
+    left: 40rpx;
+}

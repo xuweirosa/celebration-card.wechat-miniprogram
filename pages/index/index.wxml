@@ -1,0 +1,37 @@
+<view class="card-box">
+    <!-- 卡片背景 -->
+    <image src="/images/bg.jpg" class="bg-img"></image>
+
+
+    <!-- 音乐播放和暂停 -->
+
+    <view class="music-icon">
+        <image class="music-image" src="/images/pause.png" wx:if="{{isPlaying}}" bindtap="pasueMusic"></image>
+        <image class="music-image" src="/images/play.png" wx:else bindtap="playMusic"></image>
+    </view>
+
+    <view class="music-hint">
+        <text wx:if="{{isPlaying}}" class="music-hint-text">点击暂停音乐</text>
+        <text wx:else class="music-hint-text">点击播放音乐</text>
+
+    </view>
+    
+    <!-- 卡片文案 -->
+    <view class="text-box border-style">
+        <input class="text-ipt to-name" value="{{toName}}" bindinput="toNameInput" disabled="{{isDisabled}}"/>
+        <input class="main-text" value="{{mainText}}" bindinput="mainTextInput" disabled="{{isDisabled}}"/>
+        <input class="from-name" value="{{fromName}}" bindinput="fromNameInput" disabled="{{isDisabled}}"/>
+
+    </view>
+
+    <view class="user-info">
+        <image class="user-avatar" src="{{avatarUrl}}"></image>
+        <text class="user-nickname">{{nickName}}</text>
+    </view>
+
+    <view>
+        <button wx:if="{{isMe}}" class="send-btn" open-type="share">发送给好友</button>
+    </view>
+
+
+</view>
